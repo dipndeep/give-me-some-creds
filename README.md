@@ -3,6 +3,8 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Kaggle Dataset](https://img.shields.io/badge/Dataset-Kaggle%20Give%20Me%20Some%20Credit-20BEFF?logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/brycecf/give-me-some-credit-dataset)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ganendrapratama)
+[![Portfolio](https://img.shields.io/badge/Portfolio-ganendra.space-black?logo=googlechrome&logoColor=white)](https://ganendra.space)
 [![Author](https://img.shields.io/badge/Author-Ganendra%20Pradipa-orange.svg)](https://github.com/dipndeep)
 
 > An end-to-end Machine Learning credit scoring engine built on 150,000 retail borrower profiles to optimize default detection, balance asymmetric lending losses, and deliver explainable underwriting decisions (XAI).
@@ -146,3 +148,7 @@ jupyter notebook notebooks/01_data_cleaning.ipynb
 
 - GitHub: [@dipndeep](https://github.com/dipndeep)
 - Project Repository: [give-me-some-creds](https://github.com/dipndeep/give-me-some-creds)
+- 🌐 Web Portfolio: [ganendra.space](https://ganendra.space)
+- 💼 LinkedIn: [linkedin.com/in/ganendrapratama](https://www.linkedin.com/in/ganendrapratama)
+- 🐙 GitHub: [@dipndeep](https://github.com/dipndeep)
+- 📁 Project Repository: [give-me-some-creds](https://github.com/dipndeep/give-me-some-creds)
