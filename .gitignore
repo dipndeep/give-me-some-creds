@@ -1,0 +1,9 @@
+# Folders to ignore
+src/
+markdown/
+linkedin_posts/
+
+# Python cache & virtual environment
+__pycache__/
+*.pyc
+.venv/
