@@ -38,10 +38,13 @@ This project is developed and documented under a structured **5-Day "Build in Pu
   - Engineered 5 anomaly indicator flags to preserve predictive signals.
   - Delivered executable notebook: [`notebooks/01_data_cleaning.ipynb`](notebooks/01_data_cleaning.ipynb).
 
-- [ ] **Day 2: Exploratory Data Analysis (EDA) & Risk Cohort Analysis** _(Upcoming)_
-  - Univariate and multivariate distribution analysis.
-  - Risk segmentation across Age cohorts, Income quartiles, and Collateral mix (Mortgage vs Unsecured).
-  - Identification of 3–5 core empirical business insights.
+- [x] **Day 2: Exploratory Data Analysis (EDA) & Risk Cohort Analysis**
+  - Uncovered 4 core empirical borrower default patterns across 150,000 records.
+  - Quantified the Age & Asset Gap (11.73% for <30 yrs vs 3.10% for 60+ yrs — 3.8x multiplier).
+  - Identified the 70% Credit Utilization Tipping Point (exponential jump to 17.72% and 37.25%).
+  - Evaluated the Mortgage Collateral Buffer (31% lower default rate among real estate holders).
+  - Demonstrated the 30-Day Early Warning Cascade (tripling default risk from 4.6% to 23.5%).
+  - Delivered executable notebook: [`notebooks/02_eda_insights.ipynb`](notebooks/02_eda_insights.ipynb).
 
 - [ ] **Day 3: Machine Learning Modeling & Explainable AI (SHAP)** _(Upcoming)_
   - Baseline model: Logistic Regression (industry scorecard standard).
