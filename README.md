@@ -46,11 +46,13 @@ This project is developed and documented under a structured **5-Day "Build in Pu
   - Demonstrated the 30-Day Early Warning Cascade (tripling default risk from 4.6% to 23.5%).
   - Delivered executable notebook: [`notebooks/02_eda_insights.ipynb`](notebooks/02_eda_insights.ipynb).
 
-- [ ] **Day 3: Machine Learning Modeling & Explainable AI (SHAP)** _(Upcoming)_
-  - Baseline model: Logistic Regression (industry scorecard standard).
-  - Challenger models: Random Forest & tuned XGBoost with `scale_pos_weight`.
-  - Comprehensive evaluation: ROC-AUC, PR-AUC, Recall@Top Deciles, KS-Statistic.
+- [x] **Day 3: Machine Learning Modeling & Explainable AI (SHAP)**
+  - Baseline model: Logistic Regression (industry scorecard standard, ROC-AUC: 0.8034).
+  - Challenger models: Random Forest (ROC-AUC: 0.8580) & tuned XGBoost with `scale_pos_weight` (ROC-AUC: **0.8686**, PR-AUC: **0.4041**).
+  - Comprehensive evaluation: KS-Statistic (**57.84%**), Gini Index (**0.7372**), Top Decile Capture (**54.7%** / 8.2x Lift).
+  - Asymmetric Loss Optimization: Calibrated cutoff at $P = 0.56$ for $FN = \$10{,}000$ vs $FP = \$1{,}000$.
   - Explainability: SHAP Beeswarm & Waterfall plots for regulatory compliance (_Adverse Action Notices_).
+  - Delivered executable notebook: [`notebooks/03_modeling_shap.ipynb`](notebooks/03_modeling_shap.ipynb).
 
 - [ ] **Day 4: Interactive Risk Simulator Dashboard (Streamlit)** _(Upcoming)_
   - Real-time credit risk scoring app.
@@ -107,8 +109,16 @@ give-me-some-creds/
 │   ├── cs-training.csv
 │   ├── cs-test.csv
 │   └── sampleEntry.csv
+├── data/
+│   └── processed/                         # Sanitized clean datasets
+├── models/                                # Serialized models & metadata
+│   ├── best_credit_model.joblib
+│   ├── scaler.joblib
+│   └── model_metadata.json
 ├── notebooks/                             # Jupyter notebooks per roadmap phase
-│   └── 01_data_cleaning.ipynb             # [Day 1] Data Health & Pipeline Notebook
+│   ├── 01_data_cleaning.ipynb             # [Day 1] Data Health & Pipeline Notebook
+│   ├── 02_eda_insights.ipynb              # [Day 2] EDA & Risk Cohort Insights Notebook
+│   └── 03_modeling_shap.ipynb             # [Day 3] ML Modeling, KS, & SHAP XAI Notebook
 ├── requirements.txt                       # Project library dependencies
 └── README.md                              # Main documentation & project portfolio guide
 ```

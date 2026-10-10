@@ -1,0 +1,42 @@
+{
+    "project_name": "CreditRiskAI Delinquency Predictor",
+    "author": "Ganendra Pradipa",
+    "champion_model": "XGBoost Classifier",
+    "champion_params": {
+        "n_estimators": 120,
+        "max_depth": 5,
+        "learning_rate": 0.05,
+        "scale_pos_weight": 13.96
+    },
+    "performance_metrics": {
+        "roc_auc": 0.8686,
+        "pr_auc": 0.4041,
+        "ks_statistic_pct": 57.84,
+        "gini_coefficient": 0.7372,
+        "brier_score": 0.1416
+    },
+    "operational_policy": {
+        "cost_optimal_threshold": 0.56,
+        "expected_approval_rate_pct": 80.3,
+        "expected_default_capture_pct": 72.97,
+        "cost_fn_usd": 10000.0,
+        "cost_fp_usd": 1000.0
+    },
+    "feature_schema": [
+        "RevolvingUtilizationOfUnsecuredLines",
+        "age",
+        "NumberOfTime30-59DaysPastDueNotWorse",
+        "DebtRatio",
+        "MonthlyIncome",
+        "NumberOfOpenCreditLinesAndLoans",
+        "NumberOfTimes90DaysLate",
+        "NumberRealEstateLoansOrLines",
+        "NumberOfTime60-89DaysPastDueNotWorse",
+        "NumberOfDependents",
+        "HasPastDueRecordError",
+        "RevolvingUtilizationOverLimit",
+        "MonthlyIncome_is_missing",
+        "DebtRatio_is_extreme",
+        "NumberOfDependents_is_missing"
+    ]
+}
