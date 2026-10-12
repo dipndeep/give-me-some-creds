@@ -106,21 +106,27 @@ This project is developed and documented under a structured **5-Day "Build in Pu
 
 ```
 give-me-some-creds/
+├── .streamlit/                            # Streamlit configuration & corporate dark theme
+│   └── config.toml
 ├── datasets/                              # Raw competition data & data dictionary
 │   ├── Data Dictionary.xls
 │   ├── cs-training.csv
 │   ├── cs-test.csv
 │   └── sampleEntry.csv
 ├── data/
-│   └── processed/                         # Sanitized clean datasets
+│   ├── processed/                         # Sanitized clean datasets
+│   └── sample_applicants.csv              # [Day 4] 50 benchmark applicants for batch scoring
 ├── models/                                # Serialized models & metadata
-│   ├── best_credit_model.joblib
+│   ├── best_credit_model.joblib           # Champion XGBoost model (ROC-AUC 0.8686)
 │   ├── scaler.joblib
 │   └── model_metadata.json
 ├── notebooks/                             # Jupyter notebooks per roadmap phase
 │   ├── 01_data_cleaning.ipynb             # [Day 1] Data Health & Pipeline Notebook
 │   ├── 02_eda_insights.ipynb              # [Day 2] EDA & Risk Cohort Insights Notebook
 │   └── 03_modeling_shap.ipynb             # [Day 3] ML Modeling, KS, & SHAP XAI Notebook
+├── src/                                   # Core application engine & backend modules
+│   └── scoring_engine.py                  # [Day 4] Production OOP risk scoring & SHAP engine
+├── app.py                                 # [Day 4] Interactive Underwriting Simulator (Streamlit)
 ├── requirements.txt                       # Project library dependencies
 └── README.md                              # Main documentation & project portfolio guide
 ```
@@ -143,15 +149,23 @@ cd give-me-some-creds
 python -m venv .venv
 # Activate on Windows:
 .venv\Scripts\activate
+# Activate on Linux/macOS:
+source .venv/bin/activate
 
 # Install required dependencies
 pip install -r requirements.txt
 ```
 
-### 3. Run the Day 1 Notebook
+### 3. Run the Research Notebooks (Day 1 – Day 3)
 
 ```bash
-jupyter notebook notebooks/01_data_cleaning.ipynb
+jupyter notebook notebooks/03_modeling_shap.ipynb
+```
+
+### 4. Launch the Interactive Underwriting Simulator (Day 4)
+
+```bash
+streamlit run app.py
 ```
 
 ---
