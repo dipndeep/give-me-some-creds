@@ -54,11 +54,13 @@ This project is developed and documented under a structured **5-Day "Build in Pu
   - Explainability: SHAP Beeswarm & Waterfall plots for regulatory compliance (_Adverse Action Notices_).
   - Delivered executable notebook: [`notebooks/03_modeling_shap.ipynb`](notebooks/03_modeling_shap.ipynb).
 
-- [ ] **Day 4: Interactive Risk Simulator Dashboard (Streamlit)** _(Upcoming)_
-  - Real-time credit risk scoring app.
-  - Conversion of default probabilities to FICO-scale Credit Scores (300–850).
-  - Automated underwriting policy recommendations (_Instant Approve / Review / Reject_).
-  - Dynamic local SHAP feature impact visualization.
+- [x] **Day 4: Interactive Risk Simulator Dashboard (Streamlit)**
+  - Real-time credit risk scoring app: [`app.py`](app.py) & backend engine: [`src/scoring_engine.py`](src/scoring_engine.py).
+  - Conversion of default probabilities to FICO-scale Credit Scores (300–850) via calibrated log-odds.
+  - Automated 4-tier underwriting policy recommendations (*Instant Approve / Standard / Review / Reject*).
+  - Dynamic local SHAP Waterfall chart & automated *Adverse Action Notices* for Fair Lending compliance.
+  - Interactive "What-If" credit repair sensitivity sandbox and 50-applicant batch portfolio scoring.
+  - Delivered production web app runnable via `streamlit run app.py`.
 
 - [ ] **Day 5: Executive Pitch Deck & Final Showcase** _(Upcoming)_
   - 6–8 slide PDF Carousel presentation for LinkedIn & stakeholders.

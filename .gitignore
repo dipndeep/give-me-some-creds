@@ -7,3 +7,4 @@ linkedin_posts/
 __pycache__/
 *.pyc
 .venv/
+scratch/
