@@ -63,7 +63,7 @@ This project is developed and documented under a structured **5-Day "Build in Pu
   - Delivered production web app runnable via `streamlit run app.py`.
 
 - [x] **Day 5: Executive Pitch Deck, Business ROI Translation, & Cloud Deployment**
-  - Synthesized 8-Slide Executive Pitch Deck / PDF Carousel for LinkedIn ([`markdown/konten-deck-slide.md`](markdown/konten-deck-slide.md) & [`linkedin_posts/day_5_post.md`](linkedin_posts/day_5_post.md)).
+  - Synthesized 8-Slide Executive Pitch Deck / PDF Carousel for LinkedIn ([`post/CreditRiskAI Executive Pitch Deck.pdf`](post/CreditRiskAI%20Executive%20Pitch%20Deck.pdf), [`markdown/konten-deck-slide.md`](markdown/konten-deck-slide.md), & [`linkedin_posts/day_5_post.md`](linkedin_posts/day_5_post.md)).
   - Formulated Dollar ROI Framework: **$3,550,000 net capital preserved** per $100M retail loan book.
   - Production-ready Streamlit Community Cloud deployment guide & corporate dark theme configuration.
   - Comprehensive 5-day portfolio documentation: [`markdown/day-5.md`](markdown/day-5.md) & [`markdown/report.md`](markdown/report.md).
@@ -136,6 +136,11 @@ give-me-some-creds/
 ├── data/
 │   ├── processed/                         # Sanitized clean datasets
 │   └── sample_applicants.csv              # [Day 4] 50 benchmark applicants for batch scoring
+├── post/                                  # Social media publication assets & pitch deck PDF
+│   ├── CreditRiskAI Executive Pitch Deck.pdf # [Day 5] 8-slide executive pitch deck PDF
+│   ├── day-1 (gimme some creds).jpg       # [Day 1] Infographic cover asset
+│   ├── day-2 (gimme some creds).jpg       # [Day 2] Infographic cover asset
+│   └── day-3 (gimme some creds).jpg       # [Day 3] Infographic cover asset
 ├── linkedin_posts/                        # Published & drafted LinkedIn posts (Day 1 - Day 5)
 │   ├── day_1_post.md
 │   ├── day_2_post.md
