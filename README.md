@@ -62,9 +62,29 @@ This project is developed and documented under a structured **5-Day "Build in Pu
   - Interactive "What-If" credit repair sensitivity sandbox and 50-applicant batch portfolio scoring.
   - Delivered production web app runnable via `streamlit run app.py`.
 
-- [ ] **Day 5: Executive Pitch Deck & Final Showcase** _(Upcoming)_
-  - 6–8 slide PDF Carousel presentation for LinkedIn & stakeholders.
-  - Production-ready documentation and architectural overview.
+- [x] **Day 5: Executive Pitch Deck, Business ROI Translation, & Cloud Deployment**
+  - Synthesized 8-Slide Executive Pitch Deck / PDF Carousel for LinkedIn ([`markdown/konten-deck-slide.md`](markdown/konten-deck-slide.md) & [`linkedin_posts/day_5_post.md`](linkedin_posts/day_5_post.md)).
+  - Formulated Dollar ROI Framework: **$3,550,000 net capital preserved** per $100M retail loan book.
+  - Production-ready Streamlit Community Cloud deployment guide & corporate dark theme configuration.
+  - Comprehensive 5-day portfolio documentation: [`markdown/day-5.md`](markdown/day-5.md) & [`markdown/report.md`](markdown/report.md).
+
+---
+
+## 💰 Business Impact & Dollar ROI Framework (Day 5)
+
+Translating machine learning metrics into bottom-line financial value on a benchmark **$100,000,000 loan portfolio** (10,000 borrowers @ $10,000 exposure each, with natural default rate of 6.68%):
+
+| Evaluation Metric | Scenario A: Traditional Heuristic | Scenario B: Classic Scorecard (Logistic Reg) | Scenario C: Champion XGBoost ($P=0.56$) |
+| :--- | :---: | :---: | :---: |
+| **Delinquency Recall** | 35.0% (234 caught) | 68.0% (454 caught) | **82.5% (551 caught)** |
+| **Missed Defaults (Loss FN)** | 434 borrowers | 214 borrowers | **Only 117 borrowers** |
+| **False Positives (Lost FP)** | 1,200 good clients | 950 good clients | **820 good clients** |
+| **Bad Debt Loss ($10k / FN)** | $4,340,000 | $2,140,000 | **$1,170,000** |
+| **Opportunity Cost ($1k / FP)**| $1,200,000 | $950,000 | **$820,000** |
+| **Total Risk Cost** | **$5,540,000** | **$3,090,000** | **$1,990,000** |
+| **Net Capital Preserved** | *Baseline* | +$2,450,000 | **+$3,550,000 Net Savings** |
+
+> **Key Business Takeaway**: Calibrating XGBoost against an asymmetric cost matrix saves **$3.55M** compared to naive heuristics and **$1.10M** compared to classic logistic scorecards per $100M portfolio, while keeping the healthy approval rate above **88%**.
 
 ---
 
@@ -116,6 +136,20 @@ give-me-some-creds/
 ├── data/
 │   ├── processed/                         # Sanitized clean datasets
 │   └── sample_applicants.csv              # [Day 4] 50 benchmark applicants for batch scoring
+├── linkedin_posts/                        # Published & drafted LinkedIn posts (Day 1 - Day 5)
+│   ├── day_1_post.md
+│   ├── day_2_post.md
+│   ├── day_3_post.md
+│   ├── day_4_post.md
+│   └── day_5_post.md                      # [Day 5] Grand Finale Carousel PDF caption & guide
+├── markdown/                              # 5-Day technical execution blueprints & deck scripts
+│   ├── day-1.md
+│   ├── day-2.md
+│   ├── day-3.md
+│   ├── day-4.md
+│   ├── day-5.md                           # [Day 5] Executive pitch & deployment blueprint
+│   ├── konten-deck-slide.md               # [Day 5] Full 8-Slide Pitch Deck & Carousel content
+│   └── report.md                          # Comprehensive end-to-end technical report
 ├── models/                                # Serialized models & metadata
 │   ├── best_credit_model.joblib           # Champion XGBoost model (ROC-AUC 0.8686)
 │   ├── scaler.joblib
